@@ -8,6 +8,7 @@ html,
 body {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
+    background-color: brown;
 }
 
 .sr-only {
@@ -51,9 +52,12 @@ header {
     border: none;
     border-radius: 50px;
     color: hsl(192, 100%, 9%);
+    transition: padding 2s;
 }
 
-
+.two a:hover {
+    padding: 30px 60px;
+}
 
 .header-second-row {
     grid-area: two;
@@ -277,9 +281,13 @@ footer a {
         grid-template-columns: 1fr 0.3fr;
     }
 
-    .header-first-row a {
+    .two a {
         padding: 10px 30px;
         font-size: 1em;
+    }
+
+    .two a:hover {
+        padding: 20px 40px;
     }
 
     #float-div {
@@ -310,9 +318,13 @@ footer a {
         width: 40vw;
     }
 
-    .header-first-row a {
+    .two a {
         padding: 5px;
         font-size: 0.5rem;
+    }
+
+    .two a:hover {
+        padding: 10px;
     }
 
     .header-second-row {
