@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: brown;
+}
+
+.sr-only {
+    visibility: hidden;
+}
+
+#container {
+    width: 100vw;
+    margin: auto;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    margin-bottom: 90px;
+    grid-template-areas:
+        'one one'
+        'two two';
+    padding: 60px;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url('images/bg-hero-desktop.svg');
+}
+
+.header-first-row {
+    grid-area: one;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+}
+
+
+.two {
+    justify-content: end;
+
+}
+
+.two a {
+    padding: 20px 40px;
+    background-color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 50px;
+    color: hsl(192, 100%, 9%);
+}
+
+
+
+.header-second-row {
+    grid-area: two;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: center;
+}
+
+.header-second-row img {
+    width: 43vw;
+}
+
+.header-second-row h2 {
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    text-align: left;
+    color: hsl(192, 100%, 9%);
+}
+
+.header-second-row p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+    color: hsl(208, 11%, 55%);
+    font-weight: 600;
+}
+
+.header-second-row a {
+    padding: 15px 70px;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    border: none;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 25vh;
+    background-color: #fff;
+}
+
+section {
+    width: 100%;
+}
+
+.images {
+    width: 30vw;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 60px;
+    gap: 100px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px hsl(208, 31%, 81%);
+    margin: 40px 0;
+    line-height: 1.3;
+}
+
+.box {
+    flex-flow: row-reverse;
+}
+
+.boxes h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+.boxes p {
+    color: hsl(208, 11%, 55%);
+}
+
+#float-div {
+    position: absolute;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 3px 2px grey;
+    padding: 30px 70px;
+    margin: 3rem 0;
+    left: 18rem;
+    right: 18rem;
+    z-index: 1;
+    background-color: #fff;
+    line-height: 3.5;
+    text-align: center;
+}
+
+header a:hover,
+main a:hover {
+    opacity: 70%;
+}
+
+#float-div h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(192, 100%, 9%);
+}
+
+#float-div a {
+    padding: 20px 70px;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+footer {
+    width: 100%;
+    padding: 140px 50px 90px;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    gap: 50px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    justify-content: space-around;
+}
+
+.huddle-logo {
+    width: 5vh;
+    color: #fff;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-logo h5 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.list-items {
+    gap: 15px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.list-items p {
+    display: inline;
+    padding: 0 10px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+
+}
+
+nav a:hover,
+nav a:focus-visible {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    list-style-position: inside;
+
+}
+
+.wrap,
+nav {
+    padding-top: 40px;
+}
+
+nav ul li {
+    display: flex;
+    margin-top: 10px;
+}
+
+.wrap {
+    display: grid;
+    gap: 95px;
+}
+
+
+footer .icon {
+    width: 2.5vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: inherit;
+}
+
+footer .icon:hover {
+    border: 3px solid hsl(322, 100%, 66%);
+}
+
+footer a {
+    color: #fff;
+}
+
+@media screen and (max-width:1200px) and (min-width:600px) {
+    .header-first-row {
+        grid-template-columns: 1fr 0.3fr;
+    }
+
+    .header-first-row a {
+        padding: 10px 30px;
+        font-size: 1em;
+    }
+
+    #float-div {
+        margin: 9rem 0;
+        padding: 10px;
+        left: 4rem;
+        right: 4rem;
+    }
+
+    footer .icon {
+        width: 3rem;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    #container {
+        width: 100%;
+    }
+
+    header {
+        display: block;
+        background-image: url('images/bg-hero-mobile.svg');
+        padding: 15px;
+    }
+
+    .header-first-row img {
+        width: 40vw;
+    }
+
+    .header-first-row a {
+        padding: 5px;
+        font-size: 0.5rem;
+    }
+
+    .header-second-row {
+        display: block;
+        text-align: center;
+    }
+
+    .header-second-row img {
+        margin-top: 50px;
+        width: 90vw;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .boxes {
+        display: block;
+
+    }
+
+    .image {
+        flex-direction: row-reverse;
+    }
+
+    #float-div {
+        margin-top: 21vw;
+        line-height: 3;
+        padding: 50px 10px;
+        left: 20px;
+        right: 20px;
+    }
+
+    #float-div h4 {
+        font-size: 1rem;
+    }
+
+    #float-div a {
+        padding: 10px 13px;
+        font-size: 0.5rem;
+    }
+
+    footer {
+        display: block;
+        padding: 140px 20px 40px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .wrap {
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer .icon {
+        width: 2rem;
+    }
+}
