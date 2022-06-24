@@ -111,7 +111,7 @@ a {
 main {
     width: 90%;
     margin: auto;
-    padding-bottom: 25vh;
+    padding-bottom: 8rem;
     background-color: #fff;
 }
 
@@ -152,18 +152,17 @@ section {
 }
 
 #float-div {
+
     position: absolute;
     border: none;
     border-radius: 12px;
     box-shadow: 2px 3px 2px grey;
-    padding: 30px 70px;
-    margin: 3rem 0;
-    left: 18rem;
-    right: 18rem;
-    z-index: 1;
+    padding: 30px 0;
     background-color: #fff;
     line-height: 3.5;
     text-align: center;
+    left: 18rem;
+    right: 18rem;
 }
 
 header a:hover,
@@ -219,10 +218,15 @@ footer {
     gap: 15px;
     margin-bottom: 15px;
     padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.list-items p {
-    display: inline;
+.list-items li {
+    list-style-type: none;
+
+
     padding: 0 10px;
     text-align: center;
 }
@@ -261,11 +265,13 @@ nav ul li {
 
 
 footer .icon {
-    width: 2.5vw;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    text-align: center;
     border: 2px solid #fff;
     border-radius: 50%;
     margin-left: 15px;
-    background-color: inherit;
 }
 
 footer .icon:hover {
@@ -276,9 +282,13 @@ footer a {
     color: #fff;
 }
 
-@media screen and (max-width:1200px) and (min-width:600px) {
+@media screen and (max-width:1200px) and (min-width:700px) {
     .header-first-row {
-        grid-template-columns: 1fr 0.3fr;
+        grid-template-columns: 1fr 0.5fr;
+    }
+
+    .header-second-row a {
+        padding: 15px 50px;
     }
 
     .two a {
@@ -290,19 +300,28 @@ footer a {
         padding: 20px 40px;
     }
 
+    main {
+        padding-bottom: 6rem;
+    }
+
     #float-div {
-        margin: 9rem 0;
-        padding: 10px;
+        padding: 10px 0;
         left: 4rem;
         right: 4rem;
     }
 
+
+    footer {
+        padding: 120px 50px 90px;
+    }
+
     footer .icon {
-        width: 3rem;
+        margin-left: 5px;
     }
 }
 
-@media screen and (max-width:780px) {
+
+@media screen and (max-width:700px) {
 
     #container {
         width: 100%;
@@ -339,10 +358,12 @@ footer a {
 
     main {
         width: 100%;
+        padding-bottom: 6rem;
     }
 
     .boxes {
         display: block;
+        margin-bottom: 20px;
 
     }
 
@@ -351,9 +372,8 @@ footer a {
     }
 
     #float-div {
-        margin-top: 21vw;
         line-height: 3;
-        padding: 50px 10px;
+        padding: 30px 0;
         left: 20px;
         right: 20px;
     }
@@ -369,7 +389,7 @@ footer a {
 
     footer {
         display: block;
-        padding: 140px 20px 40px;
+        padding: 90px 20px 40px;
     }
 
     nav {
@@ -381,7 +401,4 @@ footer a {
         gap: 20px;
     }
 
-    footer .icon {
-        width: 2rem;
-    }
 }
