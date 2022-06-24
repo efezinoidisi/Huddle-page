@@ -361,10 +361,23 @@ footer a {
         padding-bottom: 6rem;
     }
 
+    .boxes h3 {
+        font-size: 1.2rem;
+    }
+
+    .images {
+        width: 250px;
+    }
+
     .boxes {
         display: block;
         margin-bottom: 20px;
+        text-align: center;
+        padding: 20px 30px 50px;
+    }
 
+    .image-gap {
+        margin-bottom: 50px;
     }
 
     .image {
