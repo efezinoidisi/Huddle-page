@@ -8,7 +8,7 @@ html,
 body {
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-    background-color: brown;
+
 }
 
 .sr-only {
@@ -25,6 +25,7 @@ header {
     width: 100%;
     display: grid;
     margin-bottom: 90px;
+    padding-top: 10px;
     grid-template-areas:
         'one one'
         'two two';
@@ -337,9 +338,13 @@ footer a {
         width: 40vw;
     }
 
+    .header-first-row {
+        grid-template-columns: 1fr 0.4fr;
+    }
+
     .two a {
         padding: 5px;
-        font-size: 0.5rem;
+        font-size: 1rem;
     }
 
     .two a:hover {
@@ -347,7 +352,13 @@ footer a {
     }
 
     .header-second-row {
+        margin-top: 5rem;
         display: block;
+        text-align: center;
+    }
+
+    .header-second-row h2 {
+        font-size: 1.5rem;
         text-align: center;
     }
 
