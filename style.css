@@ -270,6 +270,7 @@ nav a:hover {
     header {
         padding: 20px 20px 0;
         margin-bottom: 100px;
+        background-image: url('images/bg-hero-desktop.svg');
     }
 
     .hlogo {
@@ -374,6 +375,7 @@ nav a:hover {
     header {
         padding: 30px 50px;
         margin-bottom: 120px;
+        background-image: url('images/bg-hero-desktop.svg');
     }
 
     .hlogo {
@@ -399,6 +401,11 @@ nav a:hover {
         padding: 20px 60px;
         width: 60%;
         margin-top: 20px;
+        transition: width 2s;
+    }
+
+    .header-second-row button:hover {
+        width: 70%;
     }
 
     .center-content {
