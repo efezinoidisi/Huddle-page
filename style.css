@@ -63,6 +63,8 @@ button:hover {
 
 .header-img {
     width: 100%;
+    animation-name: animate;
+    animation-duration: 10s;
 }
 
 .images {
@@ -264,6 +266,16 @@ nav a:hover {
     font-size: 0.7rem;
     font-weight: 400;
     color: hsl(193, 100%, 96%);
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width:700px) and (max-width:900px) {
